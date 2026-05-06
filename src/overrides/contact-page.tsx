@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Clock, Mail, MapPin, Phone } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { PresslyyContactForm } from '@/components/presslyy/contact-form'
@@ -135,45 +135,6 @@ export function ContactPageOverride() {
           </div>
 
           <aside className="space-y-6">
-            <div className="rounded-2xl border border-[#16003b]/10 bg-white p-6 shadow-sm sm:p-8">
-              <h2 className="text-lg font-semibold text-[#16003b]">Desk hours</h2>
-              <div className="mt-4 flex gap-3 text-sm text-[#413f42]">
-                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-[#f73d93]" aria-hidden />
-                <div>
-                  <p className="font-medium text-[#16003b]">Monday – Friday</p>
-                  <p className="text-[#7f8487]">9:00am – 6:00pm (local site time)</p>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl border border-[#16003b]/10 bg-white p-6 shadow-sm sm:p-8">
-              <h2 className="text-lg font-semibold text-[#16003b]">Direct lines</h2>
-              <ul className="mt-4 space-y-4 text-sm">
-                <li className="flex gap-3">
-                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#f73d93]" aria-hidden />
-                  <div>
-                    <p className="font-medium text-[#16003b]">Editorial &amp; distribution</p>
-                    <a href={`mailto:${deskEmail}`} className="text-[#f73d93] hover:underline">
-                      {deskEmail}
-                    </a>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#f73d93]" aria-hidden />
-                  <div>
-                    <p className="font-medium text-[#16003b]">Phone</p>
-                    <p className="text-[#7f8487]">Available on enterprise plans</p>
-                  </div>
-                </li>
-                <li className="flex gap-3">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#f73d93]" aria-hidden />
-                  <div>
-                    <p className="font-medium text-[#16003b]">HQ</p>
-                    <p className="text-[#7f8487]">Remote-first team · correspondence by email</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
             <div className="rounded-2xl bg-[#16003b] p-6 text-white sm:p-8">
               <p className="text-sm leading-relaxed text-white/90">
                 Looking for quick answers? Review common questions about plans, distribution scope, and timelines.

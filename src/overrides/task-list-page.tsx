@@ -50,7 +50,7 @@ export async function TaskListPageOverride({
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#f73d93]">From the newsroom</p>
           <h1 className="mt-3 max-w-3xl text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.35rem]">
-            Latest press releases
+            Latest press wire
           </h1>
           <p className="mt-5 max-w-2xl text-sm leading-relaxed text-white/85">
             Browse announcements with category filters, optional date refinements, and site search for fast discovery.

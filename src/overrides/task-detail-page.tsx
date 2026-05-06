@@ -129,7 +129,7 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
               </ol>
             </nav>
             <p className="mt-6 text-xs font-semibold uppercase tracking-[0.24em] text-[#f73d93]">
-              {typeof content.category === 'string' && content.category.trim() ? content.category : 'Press release'}
+              {typeof content.category === 'string' && content.category.trim() ? content.category : 'Press wire'}
             </p>
             <h1 className="mt-3 text-3xl font-semibold leading-[1.12] tracking-[-0.03em] text-[#16003b] sm:text-4xl lg:text-[2.5rem]">
               {post.title}
@@ -137,7 +137,6 @@ export async function TaskDetailPageOverride({ task, slug }: { task: TaskKey; sl
             {subtitle ? <p className="mt-5 text-lg leading-relaxed text-[#7f8487]">{subtitle}</p> : null}
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#413f42]">
               <span className="font-semibold text-[#16003b]">{post.authorName || 'Presslyy editorial'}</span>
-              {published ? <time dateTime={post.publishedAt}>{published}</time> : null}
             </div>
           </div>
         </header>

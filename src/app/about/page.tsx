@@ -30,9 +30,6 @@ export default function AboutPage() {
       description={`${SITE_CONFIG.name} helps organizations publish press releases with a modern newsroom experience and distribution-friendly formatting.`}
       actions={
         <>
-          <Button variant="outline" asChild>
-            <Link href="/pricing">View pricing</Link>
-          </Button>
           <Button asChild>
             <Link href="/contact">Contact</Link>
           </Button>
@@ -48,8 +45,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-sm leading-relaxed text-[#7f8487]">
               We focus on one job: help communications teams ship polished releases and keep a public archive that looks intentional.
-              No borrowed marketplace UI, no noisy social feed—just a disciplined newsroom surface paired with pricing that matches
-              how teams actually publish.
+              No borrowed marketplace UI, no noisy social feed—just a disciplined newsroom surface.
             </p>
             <p className="text-sm leading-relaxed text-[#7f8487]">
               Whether you are announcing product milestones, partnerships, or policy updates, the reading experience should feel calm,
@@ -58,9 +54,6 @@ export default function AboutPage() {
             <div className="flex flex-wrap gap-3 pt-2">
               <Button asChild className="bg-[#f73d93] hover:bg-[#e02d82]">
                 <Link href="/updates">Browse newsroom</Link>
-              </Button>
-              <Button variant="ghost" asChild className="text-[#16003b]">
-                <Link href="/pricing">Compare plans</Link>
               </Button>
             </div>
           </CardContent>

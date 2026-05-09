@@ -29,7 +29,7 @@ function getCategory(post: SitePost) {
   const c = post.content && typeof post.content === 'object' ? (post.content as { category?: string }).category : null
   if (typeof c === 'string' && c.trim()) return c.trim()
   const tag = post.tags?.find((t) => typeof t === 'string')
-  return typeof tag === 'string' ? tag : 'Press release'
+  return typeof tag === 'string' ? tag : 'Press wire'
 }
 
 const faqItems = [
@@ -44,10 +44,6 @@ const faqItems = [
   {
     q: 'Do article pages support sharing?',
     a: 'Each release page includes sharing actions so readers can distribute the story to common networks.',
-  },
-  {
-    q: 'Where should teams start with pricing?',
-    a: 'Compare tiers on the pricing page. If you are unsure, start with Pro for balanced reach and analytics.',
   },
 ]
 
@@ -99,7 +95,7 @@ export async function HomePageOverride() {
           <div className="presslyy-animate-rise max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#f73d93]">From the newsroom</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.08] tracking-[-0.04em] sm:text-5xl lg:text-[3.15rem]">
-              Distribute press releases with a newsroom that feels premium—not generic.
+              Distribute press wire with a newsroom that feels premium—not generic.
             </h1>
             <p className="mt-6 text-base leading-relaxed text-white/85">{SITE_CONFIG.description}</p>
             <div className="mt-6 flex items-center gap-2 text-sm text-white/90">
@@ -116,12 +112,6 @@ export async function HomePageOverride() {
                 className="inline-flex items-center justify-center rounded-full bg-[#f73d93] px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_40px_rgba(247,61,147,0.45)] transition hover:bg-[#e02d82]"
               >
                 {siteContent.hero.primaryCta.label}
-              </Link>
-              <Link
-                href="/pricing"
-                className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/16"
-              >
-                {siteContent.hero.secondaryCta.label}
               </Link>
             </div>
           </div>
@@ -143,25 +133,6 @@ export async function HomePageOverride() {
           </p>
         </div>
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          <Link
-            href="/pricing"
-            className="group relative overflow-hidden rounded-2xl border border-[#16003b]/10 shadow-[0_20px_60px_rgba(22,0,59,0.08)] transition hover:-translate-y-0.5"
-          >
-            <div
-              className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105"
-              style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80)' }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#16003b]/95 via-[#16003b]/55 to-[#16003b]/25" />
-            <div className="relative flex min-h-[280px] flex-col justify-end p-8 text-white">
-              <h3 className="text-2xl font-semibold">In-house teams</h3>
-              <p className="mt-2 max-w-md text-sm leading-relaxed text-white/85">
-                Ship announcements with consistent structure, cleaner approvals, and a newsroom your execs can trust.
-              </p>
-              <span className="mt-6 inline-flex w-fit rounded-full bg-[#f73d93] px-4 py-2 text-xs font-semibold uppercase tracking-wide">
-                View plans
-              </span>
-            </div>
-          </Link>
           <Link
             href="/contact"
             className="group relative overflow-hidden rounded-2xl border border-[#16003b]/10 shadow-[0_20px_60px_rgba(22,0,59,0.08)] transition hover:-translate-y-0.5"
@@ -194,7 +165,6 @@ export async function HomePageOverride() {
                 'Structured headlines and summaries for fast scanning',
                 'Newsroom grid with category + date-friendly filters',
                 'Article pages with sharing tools and related reading',
-                'Pricing tiers aligned to reach and analytics needs',
               ].map((line) => (
                 <li key={line} className="flex gap-3 text-sm leading-relaxed text-[#413f42]">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#16003b] text-white">
@@ -210,9 +180,6 @@ export async function HomePageOverride() {
                 className="inline-flex rounded-full border border-[#16003b]/15 bg-[#16003b] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2a0a5c]"
               >
                 Explore the newsroom
-              </Link>
-              <Link href="/pricing" className="inline-flex rounded-full border border-[#16003b]/15 px-5 py-2.5 text-sm font-semibold text-[#16003b] transition hover:bg-[#16003b]/6">
-                Compare pricing
               </Link>
             </div>
           </div>
@@ -309,7 +276,7 @@ export async function HomePageOverride() {
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#7f8487]">Latest from the newsroom</p>
-            <h2 className="mt-2 text-3xl font-semibold tracking-[-0.03em] text-[#16003b]">Recent press releases</h2>
+            <h2 className="mt-2 text-3xl font-semibold tracking-[-0.03em] text-[#16003b]">Recent press wire</h2>
           </div>
           <Link href="/updates" className="text-sm font-semibold text-[#f73d93] hover:underline">
             View all →
@@ -376,7 +343,7 @@ export async function HomePageOverride() {
                 'The newsroom finally looks like our brand—not a bolted-on blog. Approvals are faster because the page structure is obvious.',
             },
             {
-              name: 'Priya S.',
+              name: 'Sarah M.',
               role: 'PR agency director',
               quote:
                 'Clients understand the archive immediately. We spend less time explaining navigation and more time on the story.',

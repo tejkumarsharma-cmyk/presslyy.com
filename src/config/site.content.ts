@@ -5,20 +5,16 @@ export const siteContent = {
     tagline: 'Media distribution desk',
   },
   footer: {
-    tagline: 'Press releases built for discovery and credibility',
+    tagline: 'Press wire built for discovery and credibility',
   },
   hero: {
     badge: 'Press distribution',
     title: ['Reach journalists, feeds, and readers with a newsroom built for clarity.'],
     description:
-      'Presslyy is a media press release workspace: publish once, distribute with structure, and keep a public archive that looks like a modern news desk.',
+      'Presslyy is a media press wire workspace: publish once, distribute with structure, and keep a public archive that looks like a modern news desk.',
     primaryCta: {
       label: 'Browse newsroom',
       href: '/updates',
-    },
-    secondaryCta: {
-      label: 'View pricing',
-      href: '/pricing',
     },
     searchPlaceholder: 'Search releases',
     focusLabel: 'Latest',
@@ -29,14 +25,14 @@ export const siteContent = {
   },
   home: {
     metadata: {
-      title: 'Presslyy — Press release distribution and newsroom',
+      title: 'Presslyy — Press wire distribution and newsroom',
       description:
-        'Publish press releases, grow visibility, and keep a credible public newsroom with Presslyy.',
-      openGraphTitle: 'Presslyy — Press release distribution',
+        'Publish press wire, grow visibility, and keep a credible public newsroom with Presslyy.',
+      openGraphTitle: 'Presslyy — Press wire distribution',
       openGraphDescription:
-        'Modern press release distribution with a clean newsroom, readable article pages, and pricing that scales.',
+        'Modern press wire distribution with a clean newsroom and readable article pages.',
       keywords: [
-        'press release',
+        'press wire',
         'media distribution',
         'newsroom',
         'PR distribution',
@@ -54,7 +50,6 @@ export const siteContent = {
     sidePoints: [
       'A public newsroom grid with filters and search.',
       'Article pages tuned for reading and sharing.',
-      'Pricing tiers for teams from first launch to high volume.',
     ],
     primaryLink: {
       label: 'Open newsroom',
@@ -116,7 +111,7 @@ export const taskPageMetadata: Record<
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest press releases',
+    title: 'Latest press wire',
     description: 'Browse the newsroom archive with filters and search.',
   },
 }
@@ -142,12 +137,11 @@ export const taskIntroCopy: Record<
   mediaDistribution: {
     title: 'Newsroom archive',
     paragraphs: [
-      'Browse published press releases with category filters, date refinements, and site search to jump straight to the story you need.',
+      'Browse published press wire with category filters, date refinements, and site search to jump straight to the story you need.',
       'Each release opens into a full article view with sharing tools and related reading to keep context close.',
     ],
     links: [
       { label: 'Home', href: '/' },
-      { label: 'Pricing', href: '/pricing' },
     ],
   },
 }
